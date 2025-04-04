@@ -1,0 +1,9 @@
+Open Terminal
+1. Navigate to your Directory
+2. python -m venv venv
+3. .\venv\Scripts\activate
+4. pip install "numpy==1.26.4" "pandas==2.2.1" --only-binary=:all:  #Avoild building from source in case of incompatable python version.
+5. pip install requests==2.28.2 streamlit==1.20.0
+6. python -c "import numpy, pandas, requests, streamlit; print('All good!')"  #Confirm install
+7. mkdir .streamlit  #Create secrets.toml inside this folder
+8. streamlit run app.py
